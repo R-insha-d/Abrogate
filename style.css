@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card-main::-webkit-scrollbar {
+    display: none;
+}
+
+.card-main {
+    width: 1200px;
+    padding: 10px;
+    display: grid;
+    flex-flow: row;
+    overflow-x: auto;
+    gap: 20px;
+    grid-auto-flow: column;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image-container img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-content {
+    padding: 20px;
+    background: linear-gradient(135deg, #ff56a0, #ff9350);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 40px 0 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 400px) {
+    .card-main {
+        width: 390px;
+        padding: 10px;
+        display: grid;
+        flex-flow: row;
+        overflow-x: auto;
+        gap: 20px;
+        grid-auto-flow: column;
+        border: 1px solid rgb(170, 170, 170);
+    }
+}
