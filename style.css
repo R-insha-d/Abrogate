@@ -1,110 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 0.7599253144654088) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-.card-container {
-    display: flex;
-    gap: 20px;
+.custom-width-lg {
+    width: 80%;
 }
 
-.card-main::-webkit-scrollbar {
-    display: none;
+@media (max-width: 991.98px) {
+    .custom-width-lg {
+        width: auto;
+        /* Reset width for smaller screens if necessary */
+    }
 }
 
-.card-main {
-    width: 1200px;
-    padding: 10px;
-    display: grid;
-    flex-flow: row;
-    overflow-x: auto;
-    gap: 20px;
-    grid-auto-flow: column;
-    border: 1px solid rgb(170, 170, 170);
+.bg-navcolor {
+    background-color: rgba(37, 82, 78, 0.932);
+    /* Bootstrap's bg-dark in rgba with 80% opacity */
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+}
+
+.bg-navcolor:hover {
+    background-color: rgb(255, 255, 255);
+    /* Bootstrap's bg-dark in rgba with 80% opacity */
+    color: rgb(0, 0, 0);
+}
+
+.navbar:hover {
+    background-color: #000000e0;
+    /* Bootstrap dark color */
+    color: white;
+}
+
+.navbar:hover .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    /* Light text for links */
+}
+
+.mar {
+    margin-top: 5%;
 }
 
 .card {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s ease;
+    transition-duration: 0.7s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-}
-
-.image-container img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.card-content {
-    padding: 20px;
-    background: linear-gradient(135deg, #ff56a0, #ff9350);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
-    color: white;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    position: absolute;
-    top: -25px;
-    left: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    margin: 40px 0 10px;
-    font-size: 16px;
-    line-height: 1.4;
-}
-
-p {
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
-.btn {
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: white;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-@media screen and (max-width: 400px) {
-    .card-main {
-        width: 390px;
-        padding: 10px;
-        display: grid;
-        flex-flow: row;
-        overflow-x: auto;
-        gap: 20px;
-        grid-auto-flow: column;
-        border: 1px solid rgb(170, 170, 170);
-    }
+    transform: rotateX(10deg) translateY(-10px);
 }
