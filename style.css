@@ -22,25 +22,37 @@ html {
 .bg-navcolor {
     background-color: rgba(37, 82, 78, 0.932);
     /* Bootstrap's bg-dark in rgba with 80% opacity */
-    color: rgb(255, 255, 255);
+
     border: 1px solid white;
 }
 
 .bg-navcolor:hover {
     background-color: rgb(255, 255, 255);
     /* Bootstrap's bg-dark in rgba with 80% opacity */
-    color: rgb(0, 0, 0);
+
 }
 
 .navbar:hover {
     background-color: #000000e0;
     /* Bootstrap dark color */
-    color: white;
+
 }
 
 .navbar:hover .nav-link {
     color: rgba(255, 255, 255, 0.9);
     /* Light text for links */
+}
+
+.touch {
+    border: 1px solid white;
+    color: white;
+}
+
+.touch:hover {
+    background-color: rgba(37, 82, 78, 0.932);
+    cursor: pointer;
+    /* Bootstrap's bg-dark in rgba with 80% opacity */
+
 }
 
 .mar {
@@ -53,4 +65,9 @@ html {
 
 .card:hover {
     transform: rotateX(10deg) translateY(-10px);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 150px;
 }
